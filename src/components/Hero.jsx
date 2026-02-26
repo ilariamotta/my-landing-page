@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[var(--blackWarm)] text-white flex items-center">
+    <section className="relative min-h-[78vh] bg-[var(--blackWarm)] text-white flex items-center">
       <div className="mx-auto max-w-5xl px-6 py-16">
         {/* badge */}
         <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/80">
@@ -38,6 +38,19 @@ export default function Hero() {
             Vedi progetti
           </a>
         </div>
+      </div>
+      {/* 🌊 Wave divider (più pronunciata) */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+        <svg
+          className="block w-full h-[140px]"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="var(--bgSoft)"
+            d="M0,96L60,133.3C120,171,240,245,360,261.3C480,277,600,235,720,202.7C840,171,960,149,1080,154.7C1200,160,1320,192,1380,208L1440,224L1440,320L0,320Z"
+          />
+        </svg>
       </div>
     </section>
   );
