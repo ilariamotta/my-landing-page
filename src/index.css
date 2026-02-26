@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Palette ufficiale */
+:root{
+  --blackWarm: #211A1D;
+  --pink:      #E89898;
+  --lilac:     #C9C7FF;
+  --bgSoft:    #EEF4F7;
+  --butter:    #FFF1AD;
+  --mint:      #AEEBE6;
+}
+
+/*base*/
+html, body {
+  height: 100%;
+}
+body{
+  background: var(--bgSoft);
+  color: var(--blackWarm);
+}
