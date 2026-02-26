@@ -39,10 +39,10 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      {/* 🌊 Wave divider (più pronunciata) */}
+      {/* Wave divider */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
         <svg
-          className="block w-full h-[140px]"
+          className="block w-full h-[190px]"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
         >

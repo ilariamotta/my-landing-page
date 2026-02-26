@@ -1,3 +1,6 @@
+import Card from "./Card";
+
+
 export default function ForWhom() {
     const items = [
         {
@@ -15,9 +18,9 @@ export default function ForWhom() {
     ];
 
     return (
-        <section className="bg-[var(--bgSoft)] -mt-10 py-20">
+        <section className="bg-[var(--bgSoft)]  py-20 relative">
             <div className="mx-auto max-w-6xl px-6">
-                <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-start pb-30">
                     {/* LEFT: title */}
                     <div className="lg:col-span-3">
                         <h2 className="text-xl font-semibold tracking-wide text-[var(--pink)]">
@@ -34,21 +37,8 @@ export default function ForWhom() {
                     {/* RIGHT: cards */}
                     <div className="lg:col-span-8">
                         <div className="grid gap-3 sm:grid-cols-3">
-                            {items.map((it) => (
-                                <div
-                                    key={it.title}
-                                    className="mt-2 group relative rounded-xl border border-black/5 bg-white/70 p-8 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-                                    {/* dots */}
-                                    <div className="absolute h-2 w-2 rounded-full bg-[var(--pink)] opacity-70 group-hover:opacity-100" />
-                                    {/* title */}
-                                    <h3 className="relative bottom-3 pl-5 text-xl font-bold text-[var(--blackWarm)]">
-                                        <span className="text-[var(--blackWarm)]/70">{it.title}</span>
-                                    </h3>
-                                    {/* text */}
-                                    <p className="pl-5 text-sm font-semibold leading-relaxed text-[var(--lilac)]">
-                                        {it.text}
-                                    </p>
-                                </div>
+                            {items.map((item, index) => (
+                                <Card key={index} title={item.title} text={item.text} />
                             ))}
                         </div>
 
@@ -58,6 +48,19 @@ export default function ForWhom() {
                         </p>
                     </div>
                 </div>
+            </div>
+            {/* Wave invertita */}
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none">
+                <svg
+                    className="block w-full h-[160px]"
+                    viewBox="0 0 1440 320"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        fill="var(--blackWarm)"
+                        d="M0,224L60,186.7C120,149,240,75,360,58.7C480,43,600,85,720,117.3C840,149,960,171,1080,165.3C1200,160,1320,128,1380,112L1440,96L1440,320L0,320Z"
+                    />
+                </svg>
             </div>
         </section>
     );
