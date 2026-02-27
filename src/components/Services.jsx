@@ -43,7 +43,7 @@ export default function Services() {
             </div>
 
             <p className="mt-6 text-sm text-[var(--bgSoft)]/60 text-center italic">
-              Se ti serve altro come restyling, UX/UI, revisione struttura e contenuti, possiamo parlarne lo stesso!
+              Se ti serve altro come restyling, UX/UI, revisione struttura e contenuti, parliamone insieme!
               <svg
                 className="inline h-2.5 w-2.5 ml-0.5 text-[var(--pink)] opacity-60 align-baseline"
                 viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ export default function Services() {
 
           {/* RIGHT: title */}
           <div className="order-1 lg:order-2 lg:col-span-4 lg:col-start-9 lg:text-right">
-            <h2 className="text-xl font-semibold tracking-wide text-[var(--lilac)]">
+            <h2 className="text-xl font-semibold tracking-wide text-[var(--mint)]">
               SERVIZI
             </h2>
             <h2 className="mt-3 text-4xl sm:text-5xl font-bold leading-tight">

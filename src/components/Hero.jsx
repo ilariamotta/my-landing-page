@@ -35,7 +35,7 @@ export default function Hero() {
               </a>
               <a
                 href="#progetti"
-                className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white/90 hover:bg-white/5 transition"
+                className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white/90 hover:bg-[var(--mint)]/30 transition"
               >
                 Vedi progetti
               </a>

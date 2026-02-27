@@ -2,6 +2,7 @@ import './index.css'
 import Hero from './components/Hero';
 import ForWhom from './components/ForWhom';
 import Services from './components/Services';
+import Process from './components/Process';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Hero />
         <ForWhom />
         <Services />
+        <Process />
       </div>
     </>
   );
