@@ -1,3 +1,5 @@
+import { SparklesIcon, PencilSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
+
 import Card from "./Card";
 
 
@@ -6,21 +8,27 @@ export default function ForWhom() {
         {
             title: "Per piccole realtà che vogliono crescere online",
             text: "Senza perdere identità e personalità!",
+            icon: SparklesIcon,
+            grad: ["var(--butter)", "var(--pink)"],
         },
         {
             title: "Professionisti che vogliono raccontarsi con chiarezza",
             text: "Con un sito coerente, che riflette chi sei e cosa fai!",
+            icon: PencilSquareIcon,
+            grad: ["var(--lilac)", "var(--mint)"],
         },
         {
             title: "Progetti che mettono persone e brand al centro",
             text: "L'estetica è importante, ma anche il messaggio!",
+            icon: HeartIcon,
+            grad: ["var(--pink)", "var(--lilac)"],
         },
     ];
 
     return (
         <section className="bg-[var(--bgSoft)]  py-20 relative">
             <div className="mx-auto max-w-6xl px-6">
-                <div className="grid gap-10 lg:grid-cols-12 lg:items-start pb-30">
+                <div className="grid gap-10 lg:grid-cols-12 lg:items-start pb-32">
                     {/* LEFT: title */}
                     <div className="lg:col-span-3">
                         <h2 className="text-xl font-semibold tracking-wide text-[var(--pink)]">
@@ -38,7 +46,7 @@ export default function ForWhom() {
                     <div className="lg:col-span-8">
                         <div className="grid gap-3 sm:grid-cols-3">
                             {items.map((item, index) => (
-                                <Card key={index} title={item.title} text={item.text} />
+                                <Card key={index} title={item.title} text={item.text} icon={item.icon} grad={item.grad} />
                             ))}
                         </div>
 

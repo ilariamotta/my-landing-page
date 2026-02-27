@@ -18,3 +18,65 @@ body{
   background: var(--bgSoft);
   color: var(--blackWarm);
 }
+
+
+/* PLANET AVATAR*/
+
+.planet {
+  position: relative;
+  border-radius: 9999px;
+  overflow: visible; /*per far uscire gli anelli */
+  isolation: isolate;
+}
+
+.planet img {
+  position: relative;
+  z-index: 2;
+  border-radius: 9999px;
+}
+
+/* ANELLO DIETRO*/
+.planet::before {
+  content: "";
+  position: absolute;
+  inset: -16%;
+  border-radius: 9999px;
+  border: 5px solid transparent;
+  transform: rotate(18deg);
+  z-index: 1;
+
+  border-top-color: rgba(201, 199, 255, 0.45); /* lilac soft */
+  border-right-color: rgba(174, 235, 230, 0.35); /* mint soft */
+}
+
+/* ANELLO DAVANTI*/
+.planet::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  border-radius: 9999px;
+  border: 5px solid transparent;
+  transform: rotate(-20deg);
+  z-index: 3;
+
+  border-bottom-color: rgba(255, 241, 173, 0.7); /* butter */
+  border-left-color: rgba(232, 152, 152, 0.55); /* pink */
+}
+
+@keyframes planetSpin {
+  from { transform: rotate(18deg); }
+  to   { transform: rotate(378deg); } /* 18 + 360 */
+}
+
+@keyframes planetSpinReverse {
+  from { transform: rotate(-20deg); }
+  to   { transform: rotate(-380deg); } /* -20 - 360 */
+}
+
+.planet::before {
+  animation: planetSpin 55s linear infinite;
+}
+
+.planet::after {
+  animation: planetSpinReverse 75s linear infinite;
+}
