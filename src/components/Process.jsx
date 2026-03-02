@@ -13,31 +13,31 @@ export default function Process() {
   const steps = [
     {
       title: "Call",
-      text: "Ci conosciamo e capiamo obiettivi e stile.",
+      text: "Ci conosciamo e capiamo obiettivi e stile",
       icon: PhoneIcon,
       grad: ["var(--pink)", "var(--butter)"],
     },
     {
       title: "Struttura",
-      text: "Organizziamo contenuti e navigazione (wireframe).",
+      text: "Organizziamo i contenuti e la navigazione (wireframe)",
       icon: Squares2X2Icon,
       grad: ["var(--lilac)", "var(--mint)"],
     },
     {
       title: "Design",
-      text: "UI coerente col brand, chiara e curata.",
+      text: "UI coerente col brand, chiara e curata",
       icon: PaintBrushIcon,
       grad: ["var(--mint)", "var(--pink)"],
     },
     {
       title: "Sviluppo",
-      text: "Adatto sia per desktop che mobile, veloce e ordinato.",
+      text: "Adatto sia per desktop che mobile, veloce e ordinato",
       icon: CodeBracketIcon,
       grad: ["var(--butter)", "var(--lilac)"],
     },
     {
       title: "Consegna",
-      text: "Rilascio + mini guida per gestirlo.",
+      text: "Rilascio + mini guida per gestirlo",
       icon: CheckBadgeIcon,
       grad: ["var(--pink)", "var(--lilac)"],
     },
