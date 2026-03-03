@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import ForWhom from './components/ForWhom';
 import Services from './components/Services';
 import Process from './components/Process';
+import ContactDark from './components/ContactDark';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <ForWhom />
         <Services />
         <Process />
+        <ContactDark />
       </div>
     </>
   );
