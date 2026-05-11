@@ -2,7 +2,7 @@ import PlanetAvatar from "./PlanetAvatar";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[78vh] bg-[var(--blackWarm)] text-white flex items-center">
+    <section id="home" className="relative min-h-[78vh] bg-[var(--blackWarm)] text-white flex items-center">
       <div className="mx-auto max-w-5xl px-6 py-16 w-full">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
           
@@ -26,20 +26,29 @@ export default function Hero() {
               pensate per le persone e per trasformare visite in contatti.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#contatti"
-                className="rounded-full bg-[var(--pink)] px-6 py-3 font-semibold text-[var(--blackWarm)] hover:opacity-90 transition"
-              >
-                Contattami
-              </a>
-              <a
-                href="#progetti"
-                className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white/90 hover:bg-[var(--mint)]/30 transition"
-              >
-                Vedi progetti
-              </a>
-            </div>
+<div className="mt-8 flex flex-wrap items-center justify-start gap-3">
+  <div className="relative">
+    <img
+      src="/images/gratuito-ilaria-motta-web-dev.png"
+      alt="Call gratuita"
+      className="hidden sm:block absolute left-[-115px] top-1 w-28 h-auto -translate-y-1/2 object-contain pointer-events-none"
+    />
+
+    <a
+      href="#contatti"
+      className="inline-flex rounded-full bg-[var(--pink)] px-6 py-3 font-semibold text-[var(--blackWarm)] hover:opacity-90 transition"
+    >
+      Contattami
+    </a>
+  </div>
+
+  {/* <a
+    href="#progetti"
+    className="inline-flex rounded-full border border-white/15 px-6 py-3 font-semibold text-white/90 hover:bg-[var(--mint)]/30 transition"
+  >
+    Vedi progetti
+  </a> */}
+</div>
           </div>
 
           {/* RIGHT: foto */}

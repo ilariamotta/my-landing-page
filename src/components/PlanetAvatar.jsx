@@ -8,8 +8,8 @@ export default function PlanetAvatar() {
       {/* pianeta */}
       <div className="planet relative aspect-square w-full border border-white/10 bg-white/5 shadow-[0_20px_70px_rgba(0,0,0,0.35)] z-10">
         <img
-          src="/images/ilaria.png"
-          alt="Ilaria"
+          src="/images/ilaria-motta-web-dev.png"
+          alt="ilaria-motta-web-dev"
           className="h-full w-full object-cover"
         />
       </div>

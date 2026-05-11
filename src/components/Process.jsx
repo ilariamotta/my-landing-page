@@ -19,7 +19,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="relative bg-[var(--bgSoft)] py-20 pb-32 z-0">
+    <section id="metodo" className="relative bg-[var(--bgSoft)] py-20 pb-32 z-0">
       {/* contenuto sopra la wave */}
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         <div className="text-center">

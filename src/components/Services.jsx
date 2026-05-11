@@ -24,7 +24,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="relative bg-[var(--blackWarm)] text-white py-20 pb-28">
+    <section id="servizi" className="relative bg-[var(--blackWarm)] text-white py-20 pb-28">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           {/* LEFT: cards */}

@@ -40,13 +40,13 @@ export default function ContactDark() {
   }
 
   return (
-    <section id="contatti" className="relative bg-[var(--blackWarm)] text-white py-20 pb-28">
+    <section id="contatti" className="relative bg-[var(--blackWarm)] text-white py-20 pb-28 scroll-mt-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
 
           {/* LEFT */}
           <div className="lg:col-span-4">
-            <p className="text-xl font-semibold tracking-wide text-[var(--lilac)]">
+            <p className="text-xl font-semibold tracking-wide text-[var(--butter)]">
               CONTATTI
             </p>
 

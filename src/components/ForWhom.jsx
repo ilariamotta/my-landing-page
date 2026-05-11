@@ -24,7 +24,7 @@ export default function ForWhom() {
   ];
 
   return (
-    <section className="relative bg-[var(--bgSoft)] py-20">
+    <section id="for-whom" className="relative bg-[var(--bgSoft)] py-20">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           {/* LEFT */}
