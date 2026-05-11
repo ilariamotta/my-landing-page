@@ -1,4 +1,4 @@
-import { LinkIcon, CodeBracketIcon } from "@heroicons/react/24/outline";
+import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function SocialSection() {
   return (
@@ -35,13 +35,13 @@ export default function SocialSection() {
               hover:opacity-90
             "
           >
-            <LinkIcon className="h-5 w-5 text-[var(--mint)] transition group-hover:scale-110" />
+            <FaLinkedinIn className="h-5 w-5 text-[var(--mint)] transition group-hover:scale-110" />
             LinkedIn
           </a>
 
           {/* GitHub */}
           <a
-            href="https://github.com/TUOUSERNAME"
+            href="https://github.com/ilariamotta"
             target="_blank"
             rel="noreferrer"
             className="
@@ -55,9 +55,29 @@ export default function SocialSection() {
               hover:opacity-90
             "
           >
-            <CodeBracketIcon className="h-5 w-5 text-[var(--butter)] transition group-hover:scale-110" />
+            <FaGithub className="h-5 w-5 text-[var(--lilac)] transition group-hover:scale-110" />
             GitHub
           </a>
+
+          {/* Instagram */}
+          <a
+  href="https://www.instagram.com/TUOUSERNAME"
+  target="_blank"
+  rel="noreferrer"
+  className="
+    group inline-flex items-center gap-3
+    rounded-full
+    bg-[var(--blackWarm)]
+    px-6 py-3
+    text-white
+    text-sm font-medium
+    transition
+    hover:opacity-90
+  "
+>
+  <FaInstagram className="h-5 w-5 text-[var(--pink)] transition group-hover:scale-110" />
+  Instagram
+</a>
 
         </div>
       </div>

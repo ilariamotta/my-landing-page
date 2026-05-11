@@ -7,8 +7,19 @@ import ContactDark from './components/ContactDark';
 import SocialSection from './components/SocialSection';
 import Faq from './components/Faq';
 import Header from './components/Header';
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import Footer from './components/Footer';
+
+
+ 
 
 function App() {
+
+   const isPrivacyPage = window.location.pathname === "/privacy-policy";
+
+  if (isPrivacyPage) {
+    return <PrivacyPolicy />;
+  }
   return (
     <>
       <div className="bg-[var(--bgSoft)] min-h-screen">
@@ -20,6 +31,7 @@ function App() {
         <Faq />
         <ContactDark />
         <SocialSection />
+        <Footer />
       </div>
     </>
   );

@@ -18,12 +18,13 @@ export default function Header() {
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[var(--blackWarm)]/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo / nome */}
-        <a href="#home" className="group flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-[var(--pink)] group-hover:bg-[var(--butter)] transition" />
-          <span className="font-semibold tracking-wide text-white">
-            Ilaria Motta
-          </span>
-        </a>
+       <a href="#home" className="inline-flex items-center">
+  <img
+    src="/images/logo-per-sito.png"
+    alt="Ilaria Motta Web Developer"
+    className="h-11 w-auto transition hover:opacity-80"
+  />
+</a>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-6 lg:flex">

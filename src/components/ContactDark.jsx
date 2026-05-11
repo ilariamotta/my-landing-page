@@ -80,7 +80,7 @@ export default function ContactDark() {
                   <input
                     name="name"
                     required
-                    placeholder="Nome"
+                    placeholder="Il tuo nome"
                     className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 focus:border-[var(--lilac)] outline-none"
                   />
 {/* mail */}
@@ -88,7 +88,7 @@ export default function ContactDark() {
                     name="email"
                     type="email"
                     required
-                    placeholder="Email"
+                    placeholder="La tua email"
                     className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 focus:border-[var(--mint)] outline-none"
                   />
 
@@ -153,6 +153,27 @@ export default function ContactDark() {
                   placeholder="Raccontami il tuo progetto..."
                   className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder:text-white/30 focus:border-[var(--pink)] outline-none"
                 />
+
+                <label className="flex items-start gap-3 text-sm text-white/70">
+  <input
+    type="checkbox"
+    required
+    className="mt-1 h-4 w-4 accent-[var(--pink)]"
+  />
+{/* check privacy */}
+  <span>
+    Ho letto la{" "}
+    <a
+      href="/privacy-policy"
+      target="_blank"
+      rel="noreferrer"
+      className="font-semibold text-[var(--pink)] underline underline-offset-4"
+    >
+      Privacy Policy
+    </a>
+    .
+  </span>
+</label>
 
                 <button
                   type="submit"
