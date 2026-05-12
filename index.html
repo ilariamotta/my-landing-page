@@ -1,21 +1,67 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ilaria&nbsp;Motta&nbsp;-&nbsp;Web&nbsp;Designer&nbsp;&&nbsp;Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</title>
-    <script>  // Funzione per animare il titolo
-        function scrollicon() {
-            // Prende il titolo attuale
-            var text = document.title;
-            // Sposta il primo carattere alla fine
-            document.title = text.substring(1) + text.substring(0, 1);
-        }
 
-        // Avvia la funzione ogni 150 millisecondi
-        setInterval(scrollicon, 150);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+
+    <!-- SEO base -->
+    <title>Ilaria Motta | Web Designer & Developer</title>
+
+    <meta
+      name="description"
+      content="Creo siti web chiari, curati e responsive per professionisti, piccole realtà e progetti emergenti. Web designer e developer con background in psicologia e attenzione a design, strategia e UX/UI."
+    />
+
+    <meta name="author" content="Ilaria Motta" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph: anteprima quando condividi il sito -->
+    <meta property="og:title" content="Ilaria Motta | Web Designer & Developer" />
+    <meta
+      property="og:description"
+      content="Siti web chiari, curati e pensati per le persone. Design, strategia e psicologia applicati al web."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://TUODOMINIO.it" />
+    <meta property="og:image" content="https://TUODOMINIO.it/images/preview.png" />
+
+    <!-- Dati strutturati -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ilaria Motta",
+        "jobTitle": "Web Designer & Developer",
+        "description": "Web designer e developer con background in psicologia e attenzione a design, strategia e UX/UI.",
+        "url": "https://TUODOMINIO.it",
+        "email": "mailto:TUAEMAIL",
+        "sameAs": [
+          "https://www.linkedin.com/in/TUOUSERNAME",
+          "https://github.com/TUOUSERNAME",
+          "https://www.instagram.com/TUOUSERNAME"
+        ],
+        "knowsAbout": [
+          "Web development",
+          "Web design",
+          "UX/UI design",
+          "React",
+          "Tailwind CSS",
+          "Psychology",
+          "Landing page",
+          "Siti web responsive",
+          "Progettazione web",
+          "Strategia digitale",
+          "PHP",
+          "Laravel"
+        ]
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
