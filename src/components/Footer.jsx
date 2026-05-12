@@ -52,7 +52,7 @@ export default function Footer() {
             </a>
 
             <a
-  href="https://www.instagram.com/TUOUSERNAME"
+  href="https://www.instagram.com/lil.webdesign/"
   target="_blank"
   rel="noreferrer"
   aria-label="Instagram"

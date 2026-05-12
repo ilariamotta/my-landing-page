@@ -61,7 +61,7 @@ export default function SocialSection() {
 
           {/* Instagram */}
           <a
-  href="https://www.instagram.com/TUOUSERNAME"
+  href="https://www.instagram.com/lil.webdesign/"
   target="_blank"
   rel="noreferrer"
   className="

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://TUODOMINIO.it/</loc>
+    <loc>https://ilariamotta.it</loc>
     <priority>1.0</priority>
+  </url>
+</urlset>
+
+  <url>
+    <loc>https://ilariamotta.it/privacy-policy</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>
