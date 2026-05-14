@@ -20,9 +20,9 @@ export default function Header() {
         {/* Logo / nome */}
        <a href="#home" className="inline-flex items-center">
   <img
-    src="/images/logo-per-sito.png"
+    src="/images/web-header.png"
     alt="Logo Ilaria Motta Web Developer Lil Web Design"
-    className="h-11 w-auto transition hover:opacity-80"
+    className="h-10 w-auto transition hover:opacity-80 mx-20"
   />
 </a>
 
