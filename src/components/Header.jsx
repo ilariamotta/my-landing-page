@@ -26,11 +26,11 @@ export default function Header() {
           href="#home"
           className="inline-flex items-center justify-self-center lg:justify-self-auto"
         >
-          <img
-            src="/images/web-header.png"
-            alt="Logo Ilaria Motta Web Developer Lil Web Design"
-            className="h-10 w-auto transition hover:opacity-80"
-          />
+        <img
+  src="/images/web-header.png"
+  alt="Logo Ilaria Motta Web Developer Lil Web Design"
+  className="h-10 max-w-[150px] w-auto object-contain transition hover:opacity-80 sm:max-w-[190px] lg:max-w-none"
+/>
         </a>
 
         {/* Desktop nav */}
