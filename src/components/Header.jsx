@@ -16,15 +16,22 @@ export default function Header() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[var(--blackWarm)]/85 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        {/* Logo / nome */}
-       <a href="#home" className="inline-flex items-center">
-  <img
-    src="/images/web-header.png"
-    alt="Logo Ilaria Motta Web Developer Lil Web Design"
-    className="h-10 w-auto transition hover:opacity-80 mx-20"
-  />
-</a>
+      <div className="mx-auto grid max-w-7xl grid-cols-3 items-center px-6 py-4 lg:flex lg:justify-between">
+        
+        {/* spazio vuoto mobile per centrare il logo */}
+        <div className="lg:hidden" />
+
+        {/* Logo */}
+        <a
+          href="#home"
+          className="inline-flex items-center justify-self-center lg:justify-self-auto"
+        >
+          <img
+            src="/images/web-header.png"
+            alt="Logo Ilaria Motta Web Developer Lil Web Design"
+            className="h-10 w-auto transition hover:opacity-80"
+          />
+        </a>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-6 lg:flex">
@@ -51,7 +58,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="inline-flex rounded-full border border-white/10 bg-white/5 p-2 text-white lg:hidden"
+          className="inline-flex justify-self-end rounded-full border border-white/10 bg-white/5 p-2 text-white lg:hidden"
           aria-label="Apri menu"
         >
           {isOpen ? (
