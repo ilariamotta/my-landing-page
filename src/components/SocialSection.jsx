@@ -2,7 +2,7 @@ import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function SocialSection() {
   return (
-    <section  id="social" className="bg-[var(--bgSoft)] py-16">
+    <section id="social" className="bg-[var(--bgSoft)] py-16">
       <div className="mx-auto max-w-4xl px-6 text-center">
 
         <p className="text-xl font-semibold tracking-wide text-[var(--lilac)]">
@@ -19,6 +19,28 @@ export default function SocialSection() {
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 
+          {/* Instagram */}
+          <a
+            href="https://www.instagram.com/lil.webdesign/"
+            target="_blank"
+            rel="noreferrer"
+            className="
+    group inline-flex items-center gap-3
+    rounded-full
+    bg-[var(--blackWarm)]
+    px-6 py-3
+    text-white
+    text-sm font-medium
+    transition
+    hover:opacity-90
+  "
+          >
+
+                        <FaInstagram className="h-5 w-5 text-[var(--pink)] transition group-hover:scale-110" />
+            Instagram
+          </a>
+
+          
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/ilariamottawebdev/"
@@ -39,7 +61,7 @@ export default function SocialSection() {
             LinkedIn
           </a>
 
-          {/* GitHub */}
+          {/* GitHub
           <a
             href="https://github.com/ilariamotta"
             target="_blank"
@@ -57,27 +79,9 @@ export default function SocialSection() {
           >
             <FaGithub className="h-5 w-5 text-[var(--lilac)] transition group-hover:scale-110" />
             GitHub
-          </a>
+          </a> */}
 
-          {/* Instagram */}
-          <a
-  href="https://www.instagram.com/lil.webdesign/"
-  target="_blank"
-  rel="noreferrer"
-  className="
-    group inline-flex items-center gap-3
-    rounded-full
-    bg-[var(--blackWarm)]
-    px-6 py-3
-    text-white
-    text-sm font-medium
-    transition
-    hover:opacity-90
-  "
->
-  <FaInstagram className="h-5 w-5 text-[var(--pink)] transition group-hover:scale-110" />
-  Instagram
-</a>
+
 
         </div>
       </div>
