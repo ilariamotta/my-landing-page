@@ -28,6 +28,8 @@ export default function Header() {
         >
         <img
   src="/images/web-header.png"
+  width="400"
+height="110"
   alt="Logo Ilaria Motta Web Developer Lil Web Design"
   className="h-10 max-w-[150px] w-auto object-contain transition hover:opacity-80 sm:max-w-[190px] lg:max-w-none"
 />
