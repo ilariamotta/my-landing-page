@@ -5,7 +5,7 @@ export default function SocialSection() {
     <section id="social" className="bg-[var(--bgSoft)] py-16">
       <div className="mx-auto max-w-4xl px-6 text-center">
 
-        <p className="text-xl font-semibold tracking-wide text-[var(--lilac)]">
+        <p className="text-2xl font-bold tracking-wide text-[var(--lilacReadable)]">
           DOVE TROVARMI
         </p>
 

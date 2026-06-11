@@ -47,7 +47,7 @@ export default function ContactDark() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           {/* LEFT */}
           <div className="lg:col-span-4">
-            <p className="text-xl font-semibold tracking-wide text-[var(--butter)]">
+            <p className="text-2xl font-bold tracking-wide text-[var(--butter)]">
               CONTATTI
             </p>
 
@@ -100,7 +100,11 @@ export default function ContactDark() {
 
                 {/* Servizio */}
                 <div className="relative">
+<label htmlFor="service" className="sr-only">
+  Di cosa hai bisogno?
+</label>
                   <select
+                  id="service"
                     name="service"
                     defaultValue=""
                     required

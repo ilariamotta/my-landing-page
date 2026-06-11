@@ -24,6 +24,7 @@ function App() {
     <>
       <div className="bg-[var(--bgSoft)] min-h-screen">
         <Header />
+        <main>
         <Hero />
         <ForWhom />
         <Services />
@@ -31,6 +32,7 @@ function App() {
         <Faq />
         <ContactDark />
         <SocialSection />
+        </main>
         <Footer />
       </div>
     </>

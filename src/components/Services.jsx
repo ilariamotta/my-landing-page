@@ -57,7 +57,7 @@ export default function Services() {
 
           {/* RIGHT: title */}
           <div className="order-1 lg:order-2 lg:col-span-4 lg:col-start-9 lg:text-right">
-            <h2 className="text-xl font-semibold tracking-wide text-[var(--mint)]">
+            <h2 className="text-2xl font-bold tracking-wide text-[var(--mintReadable)]">
               SERVIZI
             </h2>
             <h2 className="mt-3 text-4xl sm:text-5xl font-bold leading-tight">

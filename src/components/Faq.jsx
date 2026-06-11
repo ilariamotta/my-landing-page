@@ -41,7 +41,7 @@ export default function Faq() {
       <div className="mx-auto max-w-4xl px-6">
         {/* titolo */}
         <div className="text-center">
-          <p className="text-xl font-semibold tracking-wide text-[var(--lilac)]">
+          <p className="text-2xl font-bold tracking-wide text-[var(--lilacReadable)]">
             DOMANDE FREQUENTI
           </p>
 

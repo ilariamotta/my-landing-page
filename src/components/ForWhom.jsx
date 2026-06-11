@@ -29,7 +29,7 @@ export default function ForWhom() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start">
           {/* LEFT */}
           <div className="lg:col-span-4">
-            <h2 className="text-xl font-semibold tracking-wide text-[var(--pink)]">
+            <h2 className="text-2xl font-bold tracking-wide text-[var(--pinkReadable)]">
               COLLABORAZIONI
             </h2>
             <h2 className="mt-3 text-4xl sm:text-5xl font-bold leading-tight text-[var(--blackWarm)]">

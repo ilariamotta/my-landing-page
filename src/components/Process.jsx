@@ -23,7 +23,7 @@ export default function Process() {
       {/* contenuto sopra la wave */}
       <div className="relative z-10 mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <p className="text-xl font-semibold tracking-wide text-[var(--lilac)]">METODO</p>
+          <p className="text-2xl font-bold tracking-wide text-[var(--lilacReadable)]">METODO</p>
           <h2 className="mt-3 text-4xl sm:text-5xl font-bold leading-tight text-[var(--blackWarm)]">
             Come lavoriamo insieme
           </h2>
