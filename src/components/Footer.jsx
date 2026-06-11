@@ -41,7 +41,7 @@ export default function Footer() {
               <FaLinkedinIn className="h-5 w-5 text-[var(--mint)]" />
             </a>
 
-            <a
+            {/* <a
               href="https://github.com/ilariamotta"
               target="_blank"
               rel="noreferrer"
@@ -49,7 +49,7 @@ export default function Footer() {
               className="grid h-10 w-10 place-items-center rounded-full bg-[var(--bgSoft)] text-white transition hover:opacity-90"
             >
               <FaGithub className="h-5 w-5 text-[var(--lilac)]" />
-            </a>
+            </a> */}
 
             <a
   href="https://www.instagram.com/lil.webdesign/"
