@@ -6,7 +6,7 @@ export default function Header() {
 
   const navLinks = [
     { label: "Home", href: "#home" },
-    { label: "Per chi", href: "#for-whom" },
+    { label: "Per chi", href: "#per-chi" },
     { label: "Servizi", href: "#servizi" },
     { label: "Metodo", href: "#metodo" },
     { label: "FAQ", href: "#faq" },
