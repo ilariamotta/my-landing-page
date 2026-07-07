@@ -88,3 +88,75 @@ html {
 .planet::after {
   animation: planetSpinReverse 75s linear infinite;
 }
+
+/* HERO HIGHLIGHT WORDS */
+
+.highlight-word {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 25rem;
+  color: var(--blackWarm);
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: nowrap;
+  vertical-align: baseline;
+  animation: highlightFloat 4.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.psicologia {
+  background: var(--pink);
+}
+
+.funzionali {
+  background: var(--lilac);
+}
+
+.intuitivi {
+  background: var(--mint);
+}
+
+.curati {
+  background: var(--butter);
+}
+
+.visite {
+  background: var(--bgSoft);
+}
+
+.float-1 {
+  animation-delay: 0s;
+}
+
+.float-2 {
+  animation-delay: 0.35s;
+}
+
+.float-3 {
+  animation-delay: 0.7s;
+}
+
+.float-4 {
+  animation-delay: 1.05s;
+}
+
+.float-5 {
+  animation-delay: 1.4s;
+}
+
+@keyframes highlightFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .highlight-word {
+    animation: none;
+  }
+}

@@ -23,11 +23,16 @@ export default function Hero() {
               <span className="text-[var(--pink)]">psicologia</span>.
             </h1>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
-              Sono una web developer con formazione in psicologia.
-              Progetto e sviluppo interfacce funzionali, intuitive e curate,
-              pensate per le persone e per trasformare visite in contatti.
-            </p>
+           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg hero-description">
+  Sono una web developer con formazione in{" "}
+  <span className="psicologia highlight-word float-1">psicologia</span>.
+  Progetto e sviluppo{" "}
+  <span className="funzionali highlight-word float-2">siti web funzionali</span>,{" "}
+  <span className="intuitivi highlight-word float-3">intuitivi</span> e{" "}
+  <span className="curati highlight-word float-4">curati</span>, pensati per le persone
+  e per trasformare visite in{" "}
+  <span className="visite highlight-word float-5">contatti</span>.
+</p>
 
             <div className="mt-8 flex flex-wrap items-center justify-start gap-3">
               <a
