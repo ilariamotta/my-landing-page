@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { whatsappDisplay, whatsappUrl } from "../data/contactLinks";
 
 export default function ContactDark() {
   const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
@@ -58,6 +60,24 @@ export default function ContactDark() {
             <p className="mt-4 max-w-sm text-base text-white/70">
               Raccontami cosa ti serve e ti risponderò il prima possibile!
             </p>
+            <div className="mt-6 space-y-3">
+  <a
+    href={whatsappUrl}
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center gap-2 rounded-full bg-[var(--mint)] px-5 py-3 text-sm font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
+  >
+    <FaWhatsapp className="h-5 w-5" />
+    Scrivimi su WhatsApp
+  </a>
+
+  <p className="text-sm text-white/55">
+    Preferisci un messaggio rapido? Puoi scrivermi anche su{" "}
+    <span className="font-semibold text-[var(--mint)]">
+      {whatsappDisplay}
+    </span>
+  </p>
+</div>
           </div>
 
           {/* RIGHT - FORM */}

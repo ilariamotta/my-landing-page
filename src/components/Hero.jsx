@@ -1,4 +1,6 @@
 import PlanetAvatar from "./PlanetAvatar";
+import { FaWhatsapp } from "react-icons/fa";
+import { whatsappUrl } from "../data/contactLinks";
 
 export default function Hero() {
   return (
@@ -8,7 +10,6 @@ export default function Hero() {
     >
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
-          
           {/* LEFT: testo */}
           <div className="lg:col-span-7">
             <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/80">
@@ -23,16 +24,24 @@ export default function Hero() {
               <span className="text-[var(--pink)]">psicologia</span>.
             </h1>
 
-           <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg hero-description">
-  Sono una web developer con formazione in{" "}
-  <span className="psicologia highlight-word float-1">psicologia</span>.
-  Progetto e sviluppo{" "}
-  <span className="funzionali highlight-word float-2">siti web funzionali</span>,{" "}
-  <span className="intuitivi highlight-word float-3">intuitivi</span> e{" "}
-  <span className="curati highlight-word float-4">curati</span>, pensati per le persone
-  e per trasformare visite in{" "}
-  <span className="visite highlight-word float-5">contatti</span>.
-</p>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg hero-description">
+              Sono una web developer con formazione in{" "}
+              <span className="psicologia highlight-word float-1">
+                psicologia
+              </span>
+              . Progetto e sviluppo{" "}
+              <span className="funzionali highlight-word float-2">
+                siti web funzionali
+              </span>
+              ,{" "}
+              <span className="intuitivi highlight-word float-3">
+                intuitivi
+              </span>{" "}
+              e{" "}
+              <span className="curati highlight-word float-4">curati</span>,
+              pensati per le persone e per trasformare visite in{" "}
+              <span className="visite highlight-word float-5">contatti</span>.
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-start gap-3">
               <a
@@ -40,6 +49,16 @@ export default function Hero() {
                 className="inline-flex rounded-full bg-[var(--pink)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
               >
                 Contattami
+              </a>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="whatsapp-attention inline-flex items-center gap-2 rounded-full bg-[var(--mint)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
+              >
+                <FaWhatsapp className="h-5 w-5" />
+                WhatsApp
               </a>
             </div>
           </div>

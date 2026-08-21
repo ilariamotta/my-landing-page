@@ -160,3 +160,25 @@ html {
     animation: none;
   }
 }
+
+@keyframes whatsappFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 24px rgba(174, 235, 230, 0.12);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.015);
+    box-shadow: 0 14px 30px rgba(174, 235, 230, 0.22);
+  }
+}
+
+.whatsapp-attention {
+  animation: whatsappFloat 3s ease-in-out infinite;
+}
+
+.whatsapp-attention:hover {
+  animation-play-state: paused;
+  transform: translateY(-2px);
+}
+

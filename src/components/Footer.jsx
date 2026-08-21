@@ -1,19 +1,19 @@
-
-import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { whatsappUrl } from "../data/contactLinks";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[var(--bgSoft)] border-t border-black/5">
+    <footer className="border-t border-black/5 bg-[var(--bgSoft)]">
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col gap-6 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
-          
           {/* Left */}
           <div>
             <p className="text-sm font-semibold text-[var(--blackWarm)]">
               © {year} Ilaria Motta
             </p>
+
             <p className="mt-1 text-sm text-[var(--blackWarm)]/60">
               Sito personale • Web Developer
             </p>
@@ -23,43 +23,43 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-4 text-sm sm:justify-start">
             <a
               href="/privacy-policy"
-              className="font-medium text-[var(--bgSoft)]/65 underline-offset-4 transition hover:text-[var(--pink)] hover:underline"
+              className="font-medium text-[var(--blackWarm)]/60 underline-offset-4 transition hover:text-[var(--pinkReadable)] hover:underline"
             >
               Privacy Policy
             </a>
           </div>
 
           {/* Right / social */}
-          <div className="flex justify-center gap-3 sm:justify-end">
+          <div className="flex justify-center gap-5 sm:justify-end">
             <a
               href="https://www.linkedin.com/in/ilariamottawebdev/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
-              className="grid h-10 w-10 place-items-center rounded-full bg-[var(--bgSoft)] text-white transition hover:opacity-90"
+              className="transition hover:-translate-y-0.5 hover:opacity-90"
             >
-              <FaLinkedinIn className="h-5 w-5 text-[var(--mint)]" />
+              <FaLinkedinIn className="h-5 w-5 text-[var(--lilacReadable)] drop-shadow-[0_2px_2px_rgba(33,26,29,0.25)]" />
             </a>
 
-            {/* <a
-              href="https://github.com/ilariamotta"
+            <a
+              href="https://www.instagram.com/lil.webdesign/"
               target="_blank"
               rel="noreferrer"
-              aria-label="GitHub"
-              className="grid h-10 w-10 place-items-center rounded-full bg-[var(--bgSoft)] text-white transition hover:opacity-90"
+              aria-label="Instagram"
+              className="transition hover:-translate-y-0.5 hover:opacity-90"
             >
-              <FaGithub className="h-5 w-5 text-[var(--lilac)]" />
-            </a> */}
+              <FaInstagram className="h-5 w-5 text-[var(--pinkReadable)] drop-shadow-[0_2px_2px_rgba(33,26,29,0.25)]" />
+            </a>
 
             <a
-  href="https://www.instagram.com/lil.webdesign/"
-  target="_blank"
-  rel="noreferrer"
-  aria-label="Instagram"
-  className="grid h-10 w-10 place-items-center rounded-full bg-[var(--bgSoft)] text-white transition hover:opacity-90"
->
-  <FaInstagram className="h-5 w-5 text-[var(--pink)]" />
-</a>
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Scrivimi su WhatsApp"
+              className="transition hover:-translate-y-0.5 hover:opacity-90"
+            >
+              <FaWhatsapp className="h-5 w-5 text-[var(--mintReadable)] drop-shadow-[0_2px_2px_rgba(33,26,29,0.25)]" />
+            </a>
           </div>
         </div>
 
