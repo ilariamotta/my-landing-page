@@ -8,6 +8,7 @@ export default function Header() {
     { label: "Home", href: "#home" },
     { label: "Per chi", href: "#per-chi" },
     { label: "Servizi", href: "#servizi" },
+    { label: "Lavori", href: "#lavori" },
     { label: "Metodo", href: "#metodo" },
     { label: "FAQ", href: "#faq" },
     { label: "Contatti", href: "#contatti" },

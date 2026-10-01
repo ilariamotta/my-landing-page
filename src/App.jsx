@@ -9,6 +9,7 @@ import Faq from './components/Faq';
 import Header from './components/Header';
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Footer from './components/Footer';
+import Works from "./components/Works";
 
 
  
@@ -28,6 +29,7 @@ function App() {
         <Hero />
         <ForWhom />
         <Services />
+        <Works />
         <Process />
         <Faq />
         <ContactDark />

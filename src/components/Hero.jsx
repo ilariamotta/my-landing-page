@@ -43,24 +43,31 @@ export default function Hero() {
               <span className="visite highlight-word float-5">contatti</span>.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-start gap-3">
-              <a
-                href="#contatti"
-                className="inline-flex rounded-full bg-[var(--pink)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
-              >
-                Contattami
-              </a>
+          <div className="mt-8 flex flex-wrap items-center justify-start gap-3">
+  <a
+    href="#contatti"
+    className="inline-flex rounded-full bg-[var(--pink)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
+  >
+    Contattami
+  </a>
 
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="whatsapp-attention inline-flex items-center gap-2 rounded-full bg-[var(--mint)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
-              >
-                <FaWhatsapp className="h-5 w-5" />
-                WhatsApp
-              </a>
-            </div>
+  <a
+    href="#lavori"
+    className="inline-flex rounded-full bg-[var(--butter)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
+  >
+    Progetti
+  </a>
+
+  <a
+    href={whatsappUrl}
+    target="_blank"
+    rel="noreferrer"
+    className="whatsapp-attention inline-flex items-center gap-2 rounded-full bg-[var(--mint)] px-6 py-3 font-semibold text-[var(--blackWarm)] transition hover:opacity-90"
+  >
+    <FaWhatsapp className="h-5 w-5" />
+    WhatsApp
+  </a>
+</div>
           </div>
 
           {/* RIGHT: foto */}
